@@ -7,7 +7,6 @@ $senha = "";
 $base = "api";
 
 //Conexão
-$conexao = mysqli_connect()
-
+$conexao = mysqli_connect($url, $usuario, $senha, $base);
 
 ?>
