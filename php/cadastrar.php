@@ -1,0 +1,22 @@
+<?php  
+
+include("conexao.php");
+
+$obterDados = file_get_contents("php://input");
+
+$extrair = json_decode($obterDados);
+
+$nomeCurso = $extrair->cursos->nomeCurso;
+$valorCurso = $extrair->cursos->valorCurso;
+
+$sql = "insert into cursos (nomeCurso, valorCurso) values ('$nomeCurso', valorCurso)";
+mysqli_query($conexao, $sql);
+
+$curso = [
+    'nomeCurso' => $nomeCurso,
+    'valorCurso' => $valorCurso
+];
+
+json_encode(['curso'=>$curso]);
+
+?>
