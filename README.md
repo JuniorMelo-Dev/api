@@ -1,3 +1,3 @@
-# Curso de api com Angular e Php.
+# Curso de api com Angular e Php
 
-## Aprendendo sobre métodos http e requisições.
+## Aprendendo sobre métodos http e requisições
