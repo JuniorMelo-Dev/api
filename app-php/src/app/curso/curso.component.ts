@@ -11,4 +11,20 @@ export class CursoComponent implements OnInit {
 
   ngOnInit() { }
 
+  cadastro():void {
+    alert("Cadastrando")
+  }
+
+  selecao():void {
+    alert("Selecionando")
+  }
+
+  alterar():void {
+    alert("Alterando")
+  }
+
+  remover():void {
+    alert("Removendo")
+  }
+
 }
